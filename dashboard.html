@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./dashboard.css" rel="stylesheet" />
+
+      <div class="dashboard-container">
+        <div class="dashboard-dashboard">
+         
+         
+<!-- //sidebar -->
+
+<div class="nav" id="navbar">
+  <nav style="display: flex; justify-content: space-between;" class=" nav__container">
+      <div>
+          <a href="#" class="nav__link nav__logo">
+            <i  style=" color: rgb(107, 176, 166) ;font-size: 20px;" class='dhide bx bxs-coffee-bean'></i>
+              <span style="padding-top: 28px;" class="nav__logo-name"><img
+                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/fab8ad69-4eab-4ddc-a288-fa170500c658?org_if_sml=12439"
+                alt="Screenshot20230301at105610127"
+                class="dashboard-screenshot20230301at10561"
+              /></span>
+          </a>
+
+
+          <div class="nav__list">
+              <div class="nav__items">
+                  <h3 style="padding-top: 10px;" class="nav__subtitle">D A S H B O A R D</h3>
+
+                  
+                  
+                  <div class="nav__dropdown">
+                      <a href="#" class="nav__link">
+                          <i style="font-size: 22px;" class='bx bx-user nav__icon' ></i>
+                          <span class="nav__name">Dashboard</span>
+                          <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                      </a>
+
+                      <div class="nav__dropdown-collapse">
+                          <div class="nav__dropdown-content">
+                              <a href="#" class="nav__dropdown-item">Record</a>
+                              <a href="#" class="nav__dropdown-item">Report</a>
+                              <a href="#" class="nav__dropdown-item">Analyse</a>
+                              <a href="#" class="nav__dropdown-item">Learn</a>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div class="nav__items">
+                  <h3 class="nav__subtitle">Pages</h3>
+
+                  <div class="nav__dropdown">
+                      <a href="#" class="nav__link">
+                        <i style="font-size: 22px;" class='bx bx-help-circle'></i>
+                          <span class="nav__name"> Help Centre</span>
+                          <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                      </a>
+
+                      <div class="nav__dropdown-collapse">
+                        <div class="nav__dropdown-content">
+                          <a href="#" class="nav__dropdown-item">Demo1</a>
+                          <a href="#" class="nav__dropdown-item">DEmo2</a>
+                          <a href="#" class="nav__dropdown-item">Demo3</a>
+                          <a href="#" class="nav__dropdown-item">Demo4</a>
+                      </div>
+                      </div>
+
+                  </div>
+
+                  <div class="nav__dropdown">
+                    <a href="#" class="nav__link">
+                      <i style="font-size: 22px;" class='bx bx-folder'></i>
+                        <span class="nav__name"> File Manager</span>
+                        <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                    </a>
+
+                    <div class="nav__dropdown-collapse">
+                        <div class="nav__dropdown-content">
+                            <a href="#" class="nav__dropdown-item">Demo1</a>
+                            <a href="#" class="nav__dropdown-item">DEmo2</a>
+                            <a href="#" class="nav__dropdown-item">Demo3</a>
+                            <a href="#" class="nav__dropdown-item">Demo4</a>
+                        </div>
+                    </div>
+                 
+              </div>
+          </div>
+      </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; font-size: 20px;
+      
+      bottom: 30px;
+      
+  ">
+        <a href="#" class="nav__link nav__logout" ><i class='bx bx-cog'></i></a>
+        
+        <a href="#" class="nav__link nav__logout">
+          <i class='bx bx-log-out nav__icon' ></i></a>
+      <a href="#" class="nav__link nav__logout"><i class='bx bx-globe'></i></a>
+      </div>
+
+   
+  </nav>
+</div>
+
+
+<!-- sidebar end -->
+            
+          </div>
+          <div class="dashboard-body">
+            <div class="dashboard-elements-top-bar">
+              <div class="dashboard-items">
+                <div class="dashboard-icons">
+                  <div class="dashboard-icon-indicator">
+                    <img
+                      src="public/playground_assets/iconnotification0133-41q.svg"
+                      alt="IconNotification0133"
+                      class="dashboard-icon-notification"
+                    />
+                    <div class="dashboard-indicator"></div>
+                  </div>
+                  <div class="dashboard-iconcalendar">
+                    <img
+                      src="public/playground_assets/union0137-jtko.svg"
+                      alt="Union0137"
+                      class="dashboard-union3"
+                    />
+                  </div>
+                  <div class="dashboard-iconlayoutgrid">
+                    <img
+                      src="public/playground_assets/union0143-v05t.svg"
+                      alt="Union0143"
+                      class="dashboard-union4"
+                    />
+                  </div>
+                </div>
+                <div class="dashboard-avatar">
+                  <div class="dashboard-image-placeholder">
+                    <img
+                      src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/f9fa7d79-a8f5-4d6b-b6e0-1faabaa38509?org_if_sml=11912"
+                      alt="Pasteimage0150"
+                      class="dashboard-pasteimage"
+                    />
+                  </div>
+                  <div class="dashboard-indicator1"></div>
+                </div>
+              </div>
+              <div class="dashboard-form-input">
+                <div class="dashboard-input">
+                  <div class="dashboard-icon-input">
+                    <div class="dashboard-iconsearch">
+                      <img
+                        src="public/playground_assets/union0157-aeu7.svg"
+                        alt="Union0157"
+                        class="dashboard-union5"
+                      />
+                    </div>
+                    <input type="text" placeholder="Search..." class="input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-frame1985">
+              <div class="dashboard-metrics">
+                <div class="dashboard-metric-cards">
+                  <div class="dashboard-content">
+                    <div class="dashboard-header1">
+                      <span class="dashboard-text018 Text16pxRegular">
+                        <span>Carbon FootPrint</span>
+                      </span>
+                      <span class="dashboard-text020 Text26pxSemibold">
+                        <span>2,412,314t CO2e</span>
+                      </span>
+                    </div>
+                    <div class="dashboard-badge">
+                      <div class="dashboard-content1">
+                        <span class="dashboard-text022 Text12pxSemibold">
+                          <span>-45%</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="dashboard-info"></div>
+                  </div>
+                </div>
+                <div class="dashboard-type-metric-style-style6">
+                  <div class="dashboard-content2">
+                    <div class="dashboard-header2">
+                      <span class="dashboard-text024 Text16pxRegular">
+                        <span>Emissions by Spinning</span>
+                      </span>
+                      <span class="dashboard-text026 Text26pxSemibold">
+                        <span>72,3694t</span>
+                      </span>
+                      <span class="dashboard-text028"><span>CO2e</span></span>
+                    </div>
+                    <div class="dashboard-badge1">
+                      <div class="dashboard-content3">
+                        <span class="dashboard-text030 Text12pxSemibold">
+                          <span>-60%</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dashboard-type-metric-style-style7">
+                  <div class="dashboard-content4">
+                    <div class="dashboard-header3">
+                      <span class="dashboard-text032 Text16pxRegular">
+                        <span>Emission By Transportation</span>
+                      </span>
+                      <span class="dashboard-text034 Text26pxSemibold">
+                        <span>361,874t</span>
+                      </span>
+                      <span class="dashboard-text036"><span>CO2e</span></span>
+                    </div>
+                    <div class="dashboard-info1">
+                      <div class="dashboard-badge2">
+                        <div class="dashboard-content5">
+                          <span class="dashboard-text038 Text12pxSemibold">
+                            <span>0.00</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dashboard-type-metric-style-style8">
+                  <div class="dashboard-content6">
+                    <div class="dashboard-header4">
+                      <span class="dashboard-text040 Text16pxRegular">
+                        <span>Emission by Carding</span>
+                      </span>
+                      <span class="dashboard-text042 Text26pxSemibold">
+                        <span>241,231</span>
+                      </span>
+                      <span class="dashboard-text044"><span>CO2e</span></span>
+                    </div>
+                    <div class="dashboard-info2">
+                      <div class="dashboard-badge3">
+                        <div class="dashboard-content7">
+                          <span class="dashboard-text046 Text12pxSemibold">
+                            <span>+0.6%</span>
+                          </span>
+                        </div>
+                      </div>
+                      <span class="dashboard-text048 Text12pxSemibold">
+                        <span>From 4.6%</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-consumptionper-day">
+            <span class="dashboard-text050"><span>Carbon Footprint</span></span>
+            <button class="dashboard-button">
+              <img
+                src="public/playground_assets/barchart0238-rwtx.svg"
+                alt="barchart0238"
+                class="dashboard-barchart"
+              />
+            </button>
+            <div class="dashboard-group150">
+              <div class="dashboard-group135">
+                <img
+                  src="public/playground_assets/line20243-35q.svg"
+                  alt="Line20243"
+                  class="dashboard-line2"
+                />
+                <img
+                  src="public/playground_assets/line30244-sj5.svg"
+                  alt="Line30244"
+                  class="dashboard-line3"
+                />
+                <div class="dashboard-group149">
+                  <span class="dashboard-text052"><span>50k</span></span>
+                  <span class="dashboard-text054"><span>100k</span></span>
+                  <span class="dashboard-text056"><span>150k</span></span>
+                  <span class="dashboard-text058"><span>200k</span></span>
+                  <span class="dashboard-text060"><span>250k</span></span>
+                  <span class="dashboard-text062"><span>300k</span></span>
+                </div>
+              </div>
+              <div class="dashboard-group148">
+                <div class="dashboard-group134">
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/236523c5-9638-45fc-bf5d-94c7aa87b289?org_if_sml=1215"
+                    alt="Rectangle3570254"
+                    class="dashboard-rectangle357"
+                  />
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/fb75d4f1-8186-4828-9fa0-d1a5c699d90a?org_if_sml=1173"
+                    alt="Rectangle3580255"
+                    class="dashboard-rectangle358"
+                  />
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/81891f65-b860-41bd-a8a0-c158731e7640?org_if_sml=1160"
+                    alt="Rectangle3590256"
+                    class="dashboard-rectangle359"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3600257-2x3f.svg"
+                    alt="Rectangle3600257"
+                    class="dashboard-rectangle360"
+                  />
+                </div>
+                <span class="dashboard-text064"><span>Jan</span></span>
+              </div>
+              <div class="dashboard-group147">
+                <div class="dashboard-group136">
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/feaf8145-ad96-4bbf-882a-ce438b3cc3ab?org_if_sml=1191"
+                    alt="Rectangle3570261"
+                    class="dashboard-rectangle3571"
+                  />
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/b445d52b-8c4e-4b07-91be-3699f2207825?org_if_sml=1167"
+                    alt="Rectangle3580262"
+                    class="dashboard-rectangle3581"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3590263-ozqq-200h.png"
+                    alt="Rectangle3590263"
+                    class="dashboard-rectangle3591"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3600264-3i0g.svg"
+                    alt="Rectangle3600264"
+                    class="dashboard-rectangle3601"
+                  />
+                </div>
+                <span class="dashboard-text066"><span>Feb</span></span>
+              </div>
+              <div class="dashboard-group146">
+                <div class="dashboard-group137">
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/108c5165-a89b-4b07-a664-c7e9d15e09c3?org_if_sml=1244"
+                    alt="Rectangle3570268"
+                    class="dashboard-rectangle3572"
+                  />
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/04cb4dd8-9bfe-4e3c-ae3f-7bcf2d6ba398?org_if_sml=1197"
+                    alt="Rectangle3580269"
+                    class="dashboard-rectangle3582"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3590270-4tcc-200h.png"
+                    alt="Rectangle3590270"
+                    class="dashboard-rectangle3592"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3600271-u0ob.svg"
+                    alt="Rectangle3600271"
+                    class="dashboard-rectangle3602"
+                  />
+                </div>
+                <span class="dashboard-text068"><span>Mar</span></span>
+              </div>
+              <div class="dashboard-group145">
+                <div class="dashboard-group138">
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/ff59dc45-4b32-4a8f-954a-514926df6299?org_if_sml=1188"
+                    alt="Rectangle3570275"
+                    class="dashboard-rectangle3573"
+                  />
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/00d08057-98dc-40b0-955e-82125f4c8d01?org_if_sml=1169"
+                    alt="Rectangle3580276"
+                    class="dashboard-rectangle3583"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3590277-mtk-200h.png"
+                    alt="Rectangle3590277"
+                    class="dashboard-rectangle3593"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3600278-gces.svg"
+                    alt="Rectangle3600278"
+                    class="dashboard-rectangle3603"
+                  />
+                </div>
+                <span class="dashboard-text070"><span>Apr</span></span>
+              </div>
+              <div class="dashboard-group144">
+                <div class="dashboard-group139">
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/ede26424-d2f1-46f5-bac0-81a51511fdcc?org_if_sml=1189"
+                    alt="Rectangle3570282"
+                    class="dashboard-rectangle3574"
+                  />
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/571172c1-4694-4090-8c0e-105909a0191a?org_if_sml=1170"
+                    alt="Rectangle3580283"
+                    class="dashboard-rectangle3584"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3590284-xek-200h.png"
+                    alt="Rectangle3590284"
+                    class="dashboard-rectangle3594"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3600285-vmg.svg"
+                    alt="Rectangle3600285"
+                    class="dashboard-rectangle3604"
+                  />
+                </div>
+                <span class="dashboard-text072"><span>May</span></span>
+              </div>
+              <div class="dashboard-group143">
+                <div class="dashboard-group140">
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/fd18f5f5-2a04-4808-8748-ea81cd5b7da4?org_if_sml=1241"
+                    alt="Rectangle3570289"
+                    class="dashboard-rectangle3575"
+                  />
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/52ca2ccf-3e35-4755-99b9-fee735a904ba?org_if_sml=1189"
+                    alt="Rectangle3580290"
+                    class="dashboard-rectangle3585"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3590291-smnff-200h.png"
+                    alt="Rectangle3590291"
+                    class="dashboard-rectangle3595"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3600292-z9pc.svg"
+                    alt="Rectangle3600292"
+                    class="dashboard-rectangle3605"
+                  />
+                </div>
+                <span class="dashboard-text074"><span>June</span></span>
+              </div>
+              <div class="dashboard-group142">
+                <div class="dashboard-group141">
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/12405dd7-0e22-44bb-ace1-13a3bc558706?org_if_sml=1240"
+                    alt="Rectangle3570296"
+                    class="dashboard-rectangle3576"
+                  />
+                  <img
+                    src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/b7ac546c-7fa7-49a4-923a-0ae27ecc0c71?org_if_sml=1195"
+                    alt="Rectangle3580297"
+                    class="dashboard-rectangle3586"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3590298-d7x-200h.png"
+                    alt="Rectangle3590298"
+                    class="dashboard-rectangle3596"
+                  />
+                  <img
+                    src="public/playground_assets/rectangle3600299-gh17.svg"
+                    alt="Rectangle3600299"
+                    class="dashboard-rectangle3606"
+                  />
+                </div>
+                <span class="dashboard-text076"><span>July</span></span>
+              </div>
+            </div>
+            <div class="dashboard-group155">
+              <div class="dashboard-group151">
+                <img
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/aa43c4aa-e3fe-4019-9ff7-3f1cfa4427dd?org_if_sml=1265"
+                  alt="Ellipse860303"
+                  class="dashboard-ellipse86"
+                />
+                <span class="dashboard-text078"><span>Spinning</span></span>
+              </div>
+              <div class="dashboard-group152">
+                <img
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/9a0ac28b-c008-447f-a4a2-5ef05201fd52?org_if_sml=1262"
+                  alt="Ellipse850306"
+                  class="dashboard-ellipse85"
+                />
+                <span class="dashboard-text080">
+                  <span>Transportation</span>
+                </span>
+              </div>
+              <div class="dashboard-group153">
+                <img
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/898d62f6-dab9-420b-9d1f-7c8baae0ba46?org_if_sml=1243"
+                  alt="Ellipse840309"
+                  class="dashboard-ellipse84"
+                />
+                <span class="dashboard-text082"><span>Carding</span></span>
+              </div>
+              <div class="dashboard-group154">
+                <img
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/a59cdfea-693a-46f2-ac86-7c9afa270993?org_if_sml=1236"
+                  alt="Ellipse830312"
+                  class="dashboard-ellipse83"
+                />
+                <span class="dashboard-text084">
+                  <span>Heating &amp; Cooling</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-group157">
+            <div class="dashboard-group1551">
+              <div class="dashboard-group1511">
+                <img
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/0369d55e-002e-4211-9c81-1099e4035366?org_if_sml=1265"
+                  alt="Ellipse860318"
+                  class="dashboard-ellipse861"
+                />
+                <span class="dashboard-text086"><span>Spinning</span></span>
+                <span class="dashboard-text088"><span>22%</span></span>
+              </div>
+              <div class="dashboard-group1521">
+                <img
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/fb708a55-6fe6-41d2-8404-fbaaaefedf16?org_if_sml=1262"
+                  alt="Ellipse850322"
+                  class="dashboard-ellipse851"
+                />
+                <span class="dashboard-text090">
+                  <span>Transportation</span>
+                </span>
+                <span class="dashboard-text092"><span>16%</span></span>
+              </div>
+              <div class="dashboard-group1531">
+                <img
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/2bff45a6-9fe3-4098-a86b-b4c379108019?org_if_sml=1243"
+                  alt="Ellipse840326"
+                  class="dashboard-ellipse841"
+                />
+                <span class="dashboard-text094"><span>Carding</span></span>
+                <span class="dashboard-text096"><span>27%</span></span>
+              </div>
+              <div class="dashboard-group1541">
+                <img
+                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/4a0451e5-d44f-4266-84da-707996139408?org_if_sml=1236"
+                  alt="Ellipse830330"
+                  class="dashboard-ellipse831"
+                />
+                <span class="dashboard-text098">
+                  <span>Heating &amp; Cooling</span>
+                </span>
+                <span class="dashboard-text100"><span>35%</span></span>
+              </div>
+            </div>
+            <span class="dashboard-text102">
+              <span>Top emissions by type</span>
+            </span>
+            <div class="dashboard-group156">
+              <img
+                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/69c0b93c-3e49-489d-8745-b86c773f505d/aa8cb168-4cc7-4925-bc65-c876411df894?org_if_sml=14415"
+                alt="Ellipse870335"
+                class="dashboard-ellipse87"
+              />
+              <img
+                src="public/playground_assets/ellipse880336-ad7l-200w.png"
+                alt="Ellipse880336"
+                class="dashboard-ellipse88"
+              />
+              <img
+                src="public/playground_assets/ellipse890337-xnec-200h.png"
+                alt="Ellipse890337"
+                class="dashboard-ellipse89"
+              />
+              <img
+                src="public/playground_assets/ellipse900338-f44-200h.png"
+                alt="Ellipse900338"
+                class="dashboard-ellipse90"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      /*==================== SHOW NAVBAR ====================*/
+const showMenu = (headerToggle, navbarId) =>{
+    const toggleBtn = document.getElementById(headerToggle),
+    nav = document.getElementById(navbarId)
+    
+    // Validate that variables exist
+    if(headerToggle && navbarId){
+        toggleBtn.addEventListener('click', ()=>{
+            // We add the show-menu class to the div tag with the nav__menu class
+            nav.classList.toggle('show-menu')
+            // change icon
+            toggleBtn.classList.toggle('bx-x')
+        })
+    }
+}
+showMenu('header-toggle','navbar')
+
+/*==================== LINK ACTIVE ====================*/
+const linkColor = document.querySelectorAll('.nav__link')
+
+function colorLink(){
+    linkColor.forEach(l => l.classList.remove('active'))
+    this.classList.add('active')
+}
+
+linkColor.forEach(l => l.addEventListener('click', colorLink))
+      </script>
+  </body>
+</html>
