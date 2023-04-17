@@ -6,7 +6,7 @@ To get started with this project, simply clone the repository to your local mach
 
 ## bash
 ## Copy code
-### git clone https://github.com/your-username/dashboard-project.git
+### git clone https://github.com/harshvardhansb/Dashboard.git
 ### Once you have cloned the repository, open the index.html file in your web browser to view the dashboard.
 
 # Features
